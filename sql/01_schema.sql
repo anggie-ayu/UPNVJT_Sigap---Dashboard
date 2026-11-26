@@ -1,8 +1,3 @@
--- UPNVJT SIGAP - Skema MySQL (mengikuti PDM: 6 tabel)
--- Jalankan:  mysql -u root -p < sql/01_schema.sql
--- Catatan: bila database SIGAP kelompok sudah ada, cukup cocokkan nama tabel/kolom
--- dengan PDM_MAPPING.md dan lewati berkas ini.
-
 CREATE DATABASE IF NOT EXISTS sigap_db
   CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 USE sigap_db;

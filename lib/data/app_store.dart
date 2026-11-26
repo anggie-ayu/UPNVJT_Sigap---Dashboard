@@ -6,9 +6,7 @@ import 'package:flutter/foundation.dart';
 import '../core/theme.dart';
 import '../models/models.dart';
 
-/// Hash kata sandi. Untuk produksi, hash sebaiknya dilakukan di server
-/// (bcrypt/argon2). Di sini SHA-256 supaya kolom password_hash tidak
-/// menyimpan teks asli.
+
 String hashPassword(String plain) => sha256.convert(utf8.encode(plain)).toString();
 
 class ActivityLog {
@@ -18,12 +16,7 @@ class ActivityLog {
   final int colorIndex;
 }
 
-/// Semua data aplikasi ada di sini (sementara in-memory).
-///
-/// Saat dihubungkan ke database, isi setiap method (login, register,
-/// tambah/ubah/hapus ...) diganti dengan query / pemanggilan API.
-/// Tampilan tidak perlu diubah karena semua halaman hanya memanggil
-/// method pada [AppStore].
+
 class AppStore extends ChangeNotifier {
   AppStore() {
     _seed();
@@ -80,9 +73,6 @@ class AppStore extends ChangeNotifier {
   List<UserModel> get daftarKru =>
       users.where((UserModel u) => u.role == UserRole.kru).toList();
 
-  /// Pesanan aktif yang sedang ditangani kru (status Diambil / Sedang Dikerjakan).
-  /// [kecualiPesanan] diabaikan (dipakai saat mengubah pesanan yang sama).
-  /// Mengembalikan null bila kru sedang free.
   Pesanan? pesananAktifKru(int idKru, {int? kecualiPesanan}) {
     for (final Pesanan p in pesanan) {
       if (p.idKru != idKru || p.idPesanan == kecualiPesanan) continue;

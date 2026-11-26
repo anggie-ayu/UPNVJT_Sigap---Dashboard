@@ -1,6 +1,3 @@
--- UPNVJT SIGAP - Data contoh (dibuat otomatis). Jalankan setelah 01_schema.sql
--- Tanggal dibuat RELATIF terhadap NOW() sehingga filter 7/30/90 hari selalu berisi data.
--- Akun admin: sultan@email.com / admin123 (hash SHA-256, sama dengan aplikasi).
 USE sigap_db;
 SET FOREIGN_KEY_CHECKS = 0;
 

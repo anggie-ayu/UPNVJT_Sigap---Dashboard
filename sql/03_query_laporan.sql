@@ -1,6 +1,3 @@
--- UPNVJT SIGAP - Query laporan dashboard (contoh dengan nilai parameter)
--- Di aplikasi, :dari / :sampai / :kat diisi dari filter (periode, kategori).
--- :kat = NULL berarti semua kategori; ganti dengan id_kategori untuk memfilter.
 USE sigap_db;
 SET @dari = DATE_SUB(NOW(), INTERVAL 30 DAY), @sampai = NOW(), @kat = NULL;
 
