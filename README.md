@@ -25,8 +25,8 @@ dan `transaksi_keuangan`.
 
 - **Dashboard Laporan (MySQL)**: KPI, bar/line/pie chart, filter periode & kategori, grouping, tabel pesanan terbaru.
 - Login Admin (panel desktop dibatasi untuk role Admin). Registrasi mandiri hanya untuk Pelanggan; Kru hanya didaftarkan Admin.
-- CRUD master kategori layanan (termasuk kategori tetap **Lainnya (Request)**) dan master pengguna.
-- Kelola status & ubah data pesanan, status kru Free/Sibuk, dan **negosiasi harga** per pesanan.
+- CRUD master kategori layanan (termasuk kategori tetap Lainnya (Request)) dan master pengguna.
+- Kelola status & ubah data pesanan, status kru Free/Sibuk, dan negosiasi harga per pesanan.
 - Laporan Keuangan dan ekspor CSV (teks yang bisa disalin).
 - Profil admin, ubah kata sandi, logout.
 
