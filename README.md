@@ -11,9 +11,9 @@ dan `transaksi_keuangan`.
 ## Screenshot Dashboard
 
 
-![Dashboard Laporan — bar chart dan pie chart](docs/screenshots/Cuplikan Layar 2026-11-26 195423.png)
-![Dashboard Laporan — line chart](docs/screenshots/Cuplikan Layar 2026-11-26 195453.png)
-![Dashboard Laporan — filter kategori & grouping](docs/screenshots/Cuplikan Layar 2026-11-26 202712.png)
+![Dashboard Laporan — bar chart dan pie chart](docs/screenshots/dashboard-1.png)
+![Dashboard Laporan — line chart](docs/screenshots/dashboard-2.png)
+![Dashboard Laporan — filter kategori & grouping](docs/screenshots/dashboard-3.png)
 
 
 ## Akun demo untuk login Admin
